@@ -18,7 +18,7 @@ const { post } = Astro.props;
   description={post.data.description}
 >
   <div class='flex justify-end my-4'>
-    <Button href={`/blog/${post.slug}/`}>Read post &rarr;</Button>
+    <Button href={import.meta.env.BASE_URL + `/blog/${post.slug}/`}>Read post &rarr;</Button>
   </div>
 
   <div class='hidden sm:inline-block'>
@@ -29,7 +29,7 @@ const { post } = Astro.props;
           post.data.tags.map((tag) => {
             return (
               <li>
-                <a class="sanchez" href={`/blog/tags/${tag.toLowerCase()}/`}>
+                <a class="sanchez" href={import.meta.env.BASE_URL + `/blog/tags/${tag.toLowerCase()}/`}>
                   <Pill>{tag}</Pill>
                 </a>
               </li>
