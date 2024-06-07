@@ -1,0 +1,76 @@
+---
+import { join } from "node:path";
+import { AstroFont } from "astro-font";
+
+const appDir = process.cwd();
+const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
+---
+
+<AstroFont
+  config={[
+    {
+      name: "Outfit",
+      display: "swap",
+      selector: ".outfit",
+      fallback: "sans-serif",
+      src: [
+        {
+          style: "normal",
+          path: getFontPath("outfit.ttf"),
+        },
+      ],
+    },
+    {
+      display: "swap",
+      name: "Poppins",
+      selector: ".poppins",
+      fallback: "sans-serif",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: getFontPath("poppins.ttf"),
+        },
+      ],
+    },
+    {
+      display: "swap",
+      name: "Righteous",
+      fallback: "sans-serif",
+      selector: ".righteous",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: getFontPath("righteous.ttf"),
+        },
+      ],
+    },
+    {
+      display: "swap",
+      name: "Sanchez",
+      fallback: "serif",
+      selector: ".sanchez",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: getFontPath("sanchez.ttf"),
+        },
+      ],
+    },
+    {
+      display: "swap",
+      fallback: "serif",
+      selector: ".dm-serif",
+      name: "DM Serif Text",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: getFontPath("dm-serif.ttf"),
+        },
+      ],
+    },
+  ]}
+/>
