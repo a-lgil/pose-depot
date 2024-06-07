@@ -45,7 +45,7 @@ const { title, description, ogImage } = Astro.props;
   <meta property='twitter:image' content={ogImage} />
 
   <link rel='canonical' href={canonicalURL} />
-  <link rel='icon' type='image/svg' href='/favicon.svg' />
+  <link rel='icon' type='image/svg' href={import.meta.env.BASE_URL + '/favicon.svg'}/>
 
   <title>Pose Depot | {title}</title>
 
