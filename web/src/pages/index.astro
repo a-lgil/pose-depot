@@ -45,7 +45,7 @@ const builtWith = [
             <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
               A minimalistic, neobrutalism theme for Astro.
             </p>
-            <Button target={'_self'} href='/blog/'>
+            <Button target={'_self'} href={import.meta.env.BASE_URL + '/blog/'}>
               Check out the blog &rarr;
             </Button>
           </div>
