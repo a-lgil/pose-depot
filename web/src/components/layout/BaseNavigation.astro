@@ -4,8 +4,8 @@ interface Props {
 }
 
 const navigationItems = [
-  { name: 'Home', url: '/' },
-  { name: 'Blog', url: '/blog/' },
+  { name: 'Home', url: `${import.meta.env.BASE_URL}/` },
+  { name: 'Blog', url: `${import.meta.env.BASE_URL}/blog/` },
 ];
 
 const socialIcons = [
@@ -33,7 +33,7 @@ const { pageTitle } = Astro.props;
 
 <header class='border-b-4 border-black flex justify-between p-6 items-center'>
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
-  <a href='/' title='Back to Home'>
+  <a href={import.meta.env.BASE_URL + '/'} title='Back to Home'>
     <p class='righteous md:text-5xl'>Pose Depot</p>
   </a>
   <nav class='hidden md:inline-block'>
@@ -71,7 +71,7 @@ const { pageTitle } = Astro.props;
   <nav class='md:hidden flex'>
     <h2 class='hidden'>Mobile Navigation</h2>
     <ul>
-      <li><a href='/blog/'>Blog</a></li>
+      <li><a href={import.meta.env.BASE_URL + '/blog/'}>Blog</a></li>
     </ul>
   </nav>
 </header>
