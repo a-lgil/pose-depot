@@ -1,9 +1,9 @@
 ---
-import { join } from "node:path";
+import { join } from "path";
 import { AstroFont } from "astro-font";
 
 const appDir = process.cwd();
-const getFontPath = (name: string) => join(appDir, "pose-depot", "public", "fonts", name);
+const getFontPath = (name: string) => join(appDir, "pose-depot", "fonts", name);
 ---
 
 <AstroFont
