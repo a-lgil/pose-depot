@@ -1,0 +1,27 @@
+---
+interface Props {
+  color?: string | undefined;
+}
+
+// Use the provided color prop or default to a predefined color if not provided.
+const { color = "#F4F0D9" } = Astro.props;
+---
+
+<style define:vars={{ color }}>
+  div.brutal-card {
+    background-color: var(--color);
+    border-radius: 0.5rem;
+    border: 3px solid black;
+    filter: drop-shadow(8px 8px 0 rgb(0 0 0 / 1));
+    transition: all 0.2s ease-in-out;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  div.brutal-card:hover {
+    filter: drop-shadow(4px 4px 0 rgb(0 0 0 / 1));
+  }
+</style>
+
+<div class='brutal-card'>
+  <slot />
+</div>
