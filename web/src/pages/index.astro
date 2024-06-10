@@ -96,6 +96,18 @@ const builtWith = [
 </Layout>
 
 <style>
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  :global(#root) {
+    flex: 1;
+  }
 
   .bg-pattern {
     background: repeating-linear-gradient(
@@ -120,5 +132,12 @@ const builtWith = [
     100% {
       background-position: -113.137px 0;
     }
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 </style>
