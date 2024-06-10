@@ -28,7 +28,8 @@ const builtWith = [
   pageTitle='Brutal Theme | Home'
   description='Brutal is a minimalistic, neobrutalism theme for Astro.'
 >
-  <main class='bg-pink p-6'>
+  <!-- All sides should have the same amount of padding -->
+  <main class='bg-pattern p-6'>
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
       <h2 class='hidden'>About Brutal</h2>
@@ -93,3 +94,31 @@ const builtWith = [
     <RecentBlogPosts />
   </main>
 </Layout>
+
+<style>
+
+  .bg-pattern {
+    background: repeating-linear-gradient(
+      45deg,
+      #F4F0D9,
+      #F4F0D9 20px,
+      #1b3c4f 20px,
+      #1b3c4f 40px,
+      #a95548 40px,
+      #a95548 60px,
+      #579763 60px,
+      #579763 80px
+    );
+    background-size: 113.137px 113.137px;
+    animation: moveBackground 6s linear infinite;
+  }
+
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -113.137px 0;
+    }
+  }
+</style>
