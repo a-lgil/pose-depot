@@ -31,7 +31,7 @@ const socialIcons = [
 const { pageTitle } = Astro.props;
 ---
 
-<header class='border-b-4 border-black flex justify-between p-6 items-center'>
+<header class='border-b-4 border-black flex justify-between p-6 items-center'; style="background-color: #F4F0D9;">
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
   <a href={import.meta.env.BASE_URL + '/'} title='Back to Home'>
     <p class='righteous md:text-5xl'>Pose Depot</p>
