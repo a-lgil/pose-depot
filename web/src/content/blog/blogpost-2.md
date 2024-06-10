@@ -6,7 +6,7 @@ tags:
   - Astro
   - WebDev
   - Programming
-imgUrl: '../../assets/astro.jpeg'
+imgUrl: '../../assets/00023-1851899391.png'
 description: Sistemas distribuidos, ¿qué son y cómo funcionan?
 layout: '../../layouts/BlogPost.astro'
 ---
