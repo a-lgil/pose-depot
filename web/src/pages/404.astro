@@ -10,8 +10,55 @@ import ErrorPage from '@components/errors/404.astro';
   classList='h-full'
   pageTitle='Page Not Found!'
 >
-  <main class='bg-blue px-6 py-24'>
+  <main class='bg-pattern px-6 py-24'>
     <ErrorPage />
     <RecentBlogPosts />
   </main>
 </Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  :global(#root) {
+    flex: 1;
+  }
+
+  .bg-pattern {
+    background: repeating-linear-gradient(
+      45deg,
+      #F4F0D9,
+      #F4F0D9 20px,
+      #1b3c4f 20px,
+      #1b3c4f 40px,
+      #a95548 40px,
+      #a95548 60px,
+      #579763 60px,
+      #579763 80px
+    );
+    background-size: 113.137px 113.137px;
+    animation: moveBackground 6s linear infinite;
+  }
+
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -113.137px 0;
+    }
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+</style>
