@@ -44,10 +44,57 @@ const { tag, blogposts } = Astro.props;
   description={`Brutal Blog | All posts tagged with ${tag}`}
   pageTitle={`Brutal Blog | Blogposts tagged with ${tag}`}
 >
-  <main class='p-6 bg-purple grid gap-4'>
+  <main class='bg-pattern p-6 grid gap-4'>
     <div>
       <Button href={import.meta.env.BASE_URL +'/blog/'}>&larr; Back to blog</Button>
     </div>
     <BlogList posts={blogposts} />
   </main>
 </Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  :global(#root) {
+    flex: 1;
+  }
+
+  .bg-pattern {
+    background: repeating-linear-gradient(
+      45deg,
+      #F4F0D9,
+      #F4F0D9 20px,
+      #1b3c4f 20px,
+      #1b3c4f 40px,
+      #a95548 40px,
+      #a95548 60px,
+      #579763 60px,
+      #579763 80px
+    );
+    background-size: 113.137px 113.137px;
+    animation: moveBackground 6s linear infinite;
+  }
+
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -113.137px 0;
+    }
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+</style>
