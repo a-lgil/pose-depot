@@ -1,0 +1,35 @@
+---
+interface Props {
+  href: string;
+  target?: '_blank' | '_self';
+  color?: string | undefined;
+}
+
+const { href, target, color = 'white' } = Astro.props;
+---
+
+<style define:vars={{ color: color }}>
+  a.brutal-btn {
+    filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+    background-color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    transition: all;
+    transition-duration: 0.5s;
+    animation: ease-in-out;
+    font-family: 'Sanchez', serif;
+  }
+  a.brutal-btn:hover {
+    filter: drop-shadow(3px 3px 0 rgb(0 0 0 / 1));
+    background-color: var(--color);
+  }
+</style>
+
+<a
+  href={href}
+  target={target}
+  class='brutal-btn'
+>
+  <slot />
+</a>
