@@ -34,7 +34,12 @@ const { pageTitle } = Astro.props;
 <header class='border-b-4 border-black flex justify-between p-6 items-center'; style="background-color: #F4F0D9;">
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
   <a href={import.meta.env.BASE_URL + '/'} title='Back to Home'>
-    <p class='righteous md:text-5xl'>Pose Depot</p>
+    <!-- SVG logo -->
+    <img src={import.meta.env.BASE_URL + '/logo/logo_black_text_red_green_blue_dots.svg'}
+    alt='Pose Depot Logo' 
+    class='h-12 md:h-24' 
+    style='shape-rendering: geometricPrecision; margin-bottom: -0.65rem; margin-left: 0.1rem;'
+    />  
   </a>
   <nav class='hidden md:inline-block'>
     <h2 class='hidden'>Navigation</h2>
