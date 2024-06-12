@@ -9,7 +9,7 @@ interface Props {
 const { posts } = Astro.props;
 ---
 
-<ul class='grid gap-5  grid-cols-[repeat(auto-fit, minmax(250px, 1fr))]'>
+<ul class='grid gap-5  grid-cols-[repeat(auto-fit, minmax(350px, 1fr))]'>
   {
     posts.map((post) => {
       return (
@@ -24,19 +24,19 @@ const { posts } = Astro.props;
 <style>
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(max(250px, 15%), 1fr));
   }
   
   /* Adjust gap and column min-width for different screen sizes */
   @media (min-width: 768px) {
     ul {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(max(275px, 15%), 1fr));
     }
   }
 
   @media (min-width: 1024px) {
     ul {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(max(300px, 15%), 1fr));
     }
   }
 
