@@ -44,5 +44,6 @@ html {
 
 ::selection
 {
-  background-color: aliceblue;
+  background-color: #1b3c4f;
+  color: #f4f0d9;
 }
