@@ -10,19 +10,23 @@ const { href, target, color = 'white' } = Astro.props;
 
 <style define:vars={{ color: color }}>
   a.brutal-btn {
-    filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+    filter: drop-shadow(4px 4px 0 rgb(0 0 0 / 1));
     background-color: white;
+    border-radius: 0.5rem;
     display: inline-block;
     padding: 0.5rem 1rem;
     border: 2px solid black;
     transition: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
     animation: ease-in-out;
     font-family: 'Sanchez', serif;
   }
   a.brutal-btn:hover {
-    filter: drop-shadow(3px 3px 0 rgb(0 0 0 / 1));
-    background-color: var(--color);
+    filter: drop-shadow(0px 0px 0 rgb(0 0 0 / 1));
+    background-color: #579763;
+    color: #F4F0D9;
+    /* scale: 1.05; */
+    transform: translate(2px, 2px);
   }
 </style>
 
