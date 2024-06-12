@@ -2,7 +2,7 @@
 import Layout from '@layouts/Default.astro';
 import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 import MobileSocials from '@components/home/MobileSocials.astro';
-import { Pill } from '@eliancodes/brutal-ui';
+import Pill from '@components/custom/Pill.astro';
 import Button from '@components/custom/Button.astro';
 import Card from '@components/custom/Card.astro';
 
@@ -80,13 +80,11 @@ const builtWith = [
       <div class='col-span-2'>
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            What is Brutal?
+            Las gemas de cristal?
           </h2>
           <p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
+            Te ayudan si estás mal, pero no te las comas.
+            Gnomo de jardín vs. gnomo de azotea. Texto de prueba elegantesrrimo.
           </p>
         </Card>
       </div>
@@ -121,7 +119,7 @@ const builtWith = [
       #579763 60px,
       #579763 80px
     );
-    background-size: 113.137px 113.137px;
+    background-size: 113.1px 113.1px;
     animation: moveBackground 6s linear infinite;
   }
 
@@ -130,7 +128,7 @@ const builtWith = [
       background-position: 0 0;
     }
     100% {
-      background-position: -113.137px 0;
+      background-position: -113.1px 0;
     }
   }
 
