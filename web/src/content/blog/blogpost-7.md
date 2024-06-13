@@ -1,12 +1,12 @@
 ---
-title: Blogpost 2
+title: Blogpost 7
 pubDate: 12/31/2022 12:05
 author: "Elian Van Cutsem"
 tags:
   - Astro
   - WebDev
   - Programming
-imgUrl: '../../assets/00023-1851899391.png'
+imgUrl: '../../../../assets/images/tests/1.png'
 description: Sistemas distribuidos, ¿qué son y cómo funcionan?
 layout: '../../layouts/BlogPost.astro'
 ---
