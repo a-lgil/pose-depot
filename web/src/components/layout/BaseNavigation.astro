@@ -1,4 +1,6 @@
 ---
+import Button from '@components/custom/Button.astro';
+
 interface Props {
   pageTitle?: string;
 }
@@ -31,43 +33,36 @@ const socialIcons = [
 const { pageTitle } = Astro.props;
 ---
 
-<header class='border-b-4 border-black flex justify-between p-6 items-center'; style="background-color: #F4F0D9;">
+<header class='border-b-4 border-black flex justify-between p-6 items-center' style="background-color: #F4F0D9;">
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
   <a href={import.meta.env.BASE_URL + '/'} title='Back to Home'>
-    <!-- SVG logo -->
-    <img src={import.meta.env.BASE_URL + '/logo/logo_black_text_red_green_blue_dots.svg'}
-    alt='Pose Depot Logo' 
-    class='h-13 md:h-21' 
-    style='shape-rendering: geometricPrecision; margin-bottom: -0.8rem; margin-left: 0.18rem;'
+    <!-- SVG logo with hover effect class -->
+    <img 
+      src={import.meta.env.BASE_URL + '/logo/logo_black_text_red_green_blue_dots.svg'}
+      alt='Pose Depot Logo' 
+      class='h-13 md:h-21 logo-hover' 
+      style='shape-rendering: geometricPrecision; margin-bottom: -0.8rem; margin-left: 0.18rem;' 
     />  
   </a>
-  <nav class='hidden md:inline-block'>
+  <nav class='hidden md:flex gap-4'>
     <h2 class='hidden'>Navigation</h2>
-    <ul class='flex gap-8 poppins'>
+    <ul class='flex gap-4 poppins'>
       {
         navigationItems.map((item) => (
           <li>
-            <a
-              class='text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out'
-              href={item.url}
-              title={`Go to ${item.name}`}
-            >
+            <Button href={item.url} target='_self'>
               {item.name}
-            </a>
+            </Button>
           </li>
         ))
       }
       {
         socialIcons.map((item) => (
           <li>
-            <a
-              href={item.url}
-              class='hover:text-green hover:underline transition-all duration-150 ease-in-out'
-              target='_blank'
-              title={`'See @ElianCodes on ${item.name}`}
-            >
-              <div class:list={[item.icon, 'w-6 h-6']} />
-            </a>
+            <Button href={item.url} target='_blank'>
+              <div class:list={[item.icon, 'w-8 h-8 ml--3 mr--3 mt--1 mb--1']} />
+              {/* {item.name} */}
+            </Button>
           </li>
         ))
       }
@@ -76,7 +71,23 @@ const { pageTitle } = Astro.props;
   <nav class='md:hidden flex'>
     <h2 class='hidden'>Mobile Navigation</h2>
     <ul>
-      <li><a href={import.meta.env.BASE_URL + '/blog/'}>Blog</a></li>
+      <li>
+        <Button href={import.meta.env.BASE_URL + '/blog/'}>
+          Blog
+        </Button>
+      </li>
     </ul>
   </nav>
 </header>
+
+<style>
+  /* Apply hover effect with drop-shadow */
+  .logo-hover {
+    transition-duration: 0.1s;
+    animation: ease-in-out;
+  }
+
+  .logo-hover:hover {
+    filter: none;
+  }
+</style>
