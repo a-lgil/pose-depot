@@ -61,18 +61,22 @@ const { post } = Astro.props;
       <!-- Tag search card spans full width on new row -->
       <div class='col-span-2'>
         <Card>
-          <h2 class='text-3xl md:text-4xl lg:text-6xl mb-5.5 dm-serif'>Tag search:</h2>
-          <ul class='flex gap-4 flex-wrap'>
-            {
-              Array.from(uniqueTags).map((tag) => (
-                <li>
-                  <a class="sanchez" href={import.meta.env.BASE_URL + `/blog/tags/${tag.toLowerCase()}/`}>
-                    <Pill>{tag}</Pill>
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
+          <div class='flex items-center flex-wrap'>
+            <h2 class='text-3xl md:text-4xl lg:text-6xl dm-serif mb-2 mr-0 md:mr-4 lg:mr-4'>
+              Tag search:
+            </h2>
+            <ul class='flex gap-4 flex-wrap justify-start mb-2 mt-2'>
+              {
+                Array.from(uniqueTags).map((tag) => (
+                  <li>
+                    <a class="sanchez" href={import.meta.env.BASE_URL + `/blog/tags/${tag.toLowerCase()}/`}>
+                      <Pill>{tag}</Pill>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
         </Card>
       </div>
     </section>
