@@ -1,0 +1,78 @@
+---
+import { useState } from 'react';
+const { items, socialIcons } = Astro.props;
+
+const [isOpen, setIsOpen] = useState(false);
+
+const toggleDropdown = () => {
+  setIsOpen(!isOpen);
+};
+---
+
+<style>
+  .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F4F0D9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    z-index: 1000;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .dropdown-menu.active {
+    display: block; /* Show when active */
+  }
+
+  .dropdown-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+
+  .dropdown-button:hover {
+    background-color: #579763;
+    color: #F4F0D9;
+    transform: translate(2px, 2px);
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+</style>
+
+<div class="relative">
+  <div class="dropdown-button" onClick={toggleDropdown}>
+    Menu
+  </div>
+  <div class={isOpen ? 'dropdown-menu active' : 'dropdown-menu'}>
+    <div class="dropdown-content">
+      {items.map((item) => (
+        <Button href={item.url} target='_self'>
+          {item.name}
+        </Button>
+      ))}
+      <div class="social-icons">
+        {socialIcons.map((item) => (
+          <a href={item.url} target='_blank' title={`See @ElianCodes on ${item.name}`}>
+            <div class:list={[item.icon, 'w-6 h-6']} />
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
