@@ -69,21 +69,42 @@ console.log(galleryUrls);
       {galleryUrls && galleryUrls.length > 0 && (
         <>
           <h2>Gallery</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <ul class="gallery grid gap-4">
             {galleryUrls.map((galleryUrl: string) => (
-              <SummaryCard
-                title=""
-                imgAlt=""
-                imgSrc={galleryUrl}
-                description=""
-              />
+              <li key={galleryUrl}>
+                <SummaryCard
+                  title=""
+                  imgAlt=""
+                  imgSrc={galleryUrl}
+                  description=""
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </>
       )}
-    </BlogContent>
-  </main>
-  <section class='p-6'>
-    <RecentBlogPosts count={6} />
-  </section>
-</Layout>
+      
+      <style>
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(max(250px, 15%), 1fr));
+          gap: 20px; /* Adjust gap to match the original gap */
+        }
+      
+        /* Adjust gap and column min-width for different screen sizes */
+        @media (min-width: 768px) {
+          .gallery {
+            grid-template-columns: repeat(auto-fit, minmax(max(275px, 15%), 1fr));
+          }
+        }
+      
+        @media (min-width: 1024px) {
+          .gallery {
+            grid-template-columns: repeat(auto-fit, minmax(max(300px, 15%), 1fr));
+          }
+        }
+      
+        li {
+          list-style: none;
+        }
+      </style>
