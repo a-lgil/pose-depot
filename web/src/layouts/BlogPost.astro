@@ -3,11 +3,26 @@ import Layout from './Default.astro';
 import BlogSideBar from '@components/blog/BlogSideBar.astro';
 import BlogContent from '@components/blog/BlogContent.astro';
 import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
-
-const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.png`, Astro.url);
+import Pill from '@components/custom/Pill.astro';
+import SummaryCard from '@components/generic/SummaryCard.astro';
+import Button from '@components/custom/Button.astro';
+import { getEntryBySlug } from 'astro:content';
 
 const { content, headings } = Astro.props;
-const { title, description } = content;
+const { title, description, imgUrl, tags, draft, pubDate, author, layout, galleryUrl } = content;
+const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.png`, Astro.url);
+
+// Get the entry by slug
+const entry = await getEntryBySlug('blog', Astro.params.slug);
+
+// Get the image URL from the entry
+const entryImgUrl = entry.data.imgUrl;
+console.log(entryImgUrl);
+
+// Get the gallery URLs from the entry
+// For each gallery URL, we need to get the image URL
+const galleryUrls = entry.data.galleryUrls;
+console.log(galleryUrls);
 ---
 
 <Layout
@@ -19,6 +34,53 @@ const { title, description } = content;
     <BlogSideBar headings={headings} />
     <BlogContent content={content}>
       <slot />
+      <SummaryCard
+        title={title}
+        imgAlt={title}
+        imgSrc={entryImgUrl}
+        description={description}
+      >
+        <p>Published on: {pubDate}</p>
+        <p>Author: {author}</p>
+        <div class='sm:inline-block'>
+          <p class='poppins mt-2'>Tags:</p>
+          <div class='flex justify-between items-center'>
+            <ul class='flex flex-wrap gap-4 mt-2'>
+              {tags.map((tag: string) => (
+                <li>
+                  <a class="sanchez" href={import.meta.env.BASE_URL + `/blog/tags/${tag.toLowerCase()}/`}>
+                    <Pill>{tag}</Pill>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {draft && (
+              <span class='bg-green rounded-full border-2 py-1 px-4 text-sm border-black card-shadow'>
+                Draft
+              </span>
+            )}
+          </div>
+        </div>
+        <p>Layout: {layout}</p>
+        <p>Gallery: {galleryUrls && galleryUrls.length > 0 ? 'Yes' : 'No'}</p>
+        <p>tags: {tags}</p>
+      </SummaryCard>
+
+      {galleryUrls && galleryUrls.length > 0 && (
+        <>
+          <h2>Gallery</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {galleryUrls.map((galleryUrl: string) => (
+              <SummaryCard
+                title=""
+                imgAlt=""
+                imgSrc={galleryUrl}
+                description=""
+              />
+            ))}
+          </div>
+        </>
+      )}
     </BlogContent>
   </main>
   <section class='p-6'>
