@@ -76,16 +76,18 @@ console.log(galleryUrls);
         ))} -->
 
         <div class="parent-class bg-pattern grid gap-5 p-6">
-          <div onclick='window.history.back()'>
             <Card>
-              <div class="button-container flex items-center">
-                <Button>&LeftArrow; Go back</Button>
-                <h2 class='text-3xl md:text-4xl lg:text-6xl dm-serif mb-2 ml-0 md:ml-6 lg:ml-8'>
+              <div class="button-container flex flex-wrap items-center">
+                <div onclick='window.history.back()', class="mr-0 md:mr-6 lg:mr-8">
+                <Button>
+                  &LeftArrow; Go back
+                </Button>
+                </div>
+                <h2 class='texto-chulo text-3xl md:text-4xl lg:text-6xl dm-serif mb-0 mt- md:'>
                   {title}
                 </h2>
               </div>
             </Card>
-          </div>
           {galleryUrls && galleryUrls.length > 0 && (
             <div class="gallery-class">
               <ul class="grid gap-5 grid-cols-[repeat(auto-fit, minmax(350px, 1fr))] lg:grid flex justify-center">
