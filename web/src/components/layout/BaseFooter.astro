@@ -35,11 +35,11 @@ const { backToTop = false } = Astro.props;
 
 <footer class='border-t-4 bg-#F4F0D9 border-black flex justify-between p-6 items-center'>
   <h2 class='hidden'>Footer</h2>
-  <p class='outfit'>
-    Brutal theme for Astro - by <a
-      href='https://www.elian.codes/'
+  <p class='outfit' onmouseover='this.classList.add("heartBeat")' onmouseout='this.classList.remove("heartBeat")'>
+    Made with ❤️ by <a
+      href='https://github.com/a-lgil'
       target='_blank'
-      class='text-blue'>ElianCodes</a
+      class='text-blue'>a-lgil</a
     >
   </p>
 </footer>
