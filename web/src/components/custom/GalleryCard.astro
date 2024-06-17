@@ -1,0 +1,35 @@
+---
+import Card from '@components/custom/Card.astro';
+import Button from '@components/custom/Button.astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+  title: string;
+  imgSrc: ImageMetadata;
+  imgAlt: string;
+  description: string;
+}
+
+const { imgAlt, imgSrc, description } = Astro.props;
+
+// imgageUrl is this string "https://raw.githubusercontent.com/a-lgil/pose-depot/main/collections/" + imgAlt
+const imgageUrl = "https://raw.githubusercontent.com/a-lgil/pose-depot/main/collections/" + imgAlt;
+console.log(imgageUrl);
+---
+
+<Card color='#f4f0d9'>
+  <div class='rounded-lg border-3 border-black mb-4'>
+    <Image
+      src={imgSrc}
+      alt={imgAlt}
+      class='rounded h-full w-full object-cover'
+    />
+  </div>
+  <p class='poppins'>{description}</p>
+  <slot />
+  <div class='flex justify-end'>
+    <Button href={imgageUrl}>
+        Download
+    </Button>
+  </div>
+</Card>
