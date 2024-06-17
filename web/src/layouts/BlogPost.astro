@@ -4,7 +4,8 @@ import BlogSideBar from '@components/blog/BlogSideBar.astro';
 import BlogContent from '@components/blog/BlogContent.astro';
 import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 import Pill from '@components/custom/Pill.astro';
-import SummaryCard from '@components/generic/SummaryCard.astro';
+import Card from '@components/custom/Card.astro';
+import GalleryCard from '@components/custom/GalleryCard.astro';
 import Button from '@components/custom/Button.astro';
 import { getEntryBySlug } from 'astro:content';
 
@@ -30,11 +31,11 @@ console.log(galleryUrls);
   description={description as string}
   ogImage={ogImage}
 >
-  <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
-    <BlogSideBar headings={headings} />
-    <BlogContent content={content}>
-      <slot />
-      <SummaryCard
+  <!-- <main class='p-6 lg:grid flex justify-center'> -->
+    <!-- <BlogSideBar headings={headings} /> -->
+    <!-- <BlogContent content={content}> -->
+      <!-- <slot /> -->
+      <!-- <SummaryCard
         title={title}
         imgAlt={title}
         imgSrc={entryImgUrl}
@@ -54,57 +55,124 @@ console.log(galleryUrls);
                 </li>
               ))}
             </ul>
-            {draft && (
-              <span class='bg-green rounded-full border-2 py-1 px-4 text-sm border-black card-shadow'>
-                Draft
-              </span>
-            )}
           </div>
         </div>
         <p>Layout: {layout}</p>
         <p>Gallery: {galleryUrls && galleryUrls.length > 0 ? 'Yes' : 'No'}</p>
         <p>tags: {tags}</p>
-      </SummaryCard>
+      </SummaryCard> -->
 
-      {galleryUrls && galleryUrls.length > 0 && (
-        <>
-          <h2>Gallery</h2>
-          <ul class="gallery grid gap-4">
-            {galleryUrls.map((galleryUrl: string) => (
-              <li key={galleryUrl}>
-                <SummaryCard
-                  title=""
-                  imgAlt=""
-                  imgSrc={galleryUrl}
-                  description=""
-                />
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+
+      <!-- <ul class="grid gap-5 grid-cols-[repeat(auto-fit, minmax(350px, 1fr))]">
+        {galleryUrls.map((galleryUrl: string) => (
+          <li key={galleryUrl}>
+            <SummaryCard
+              title=""
+              imgAlt=""
+              imgSrc={galleryUrl}
+              description=""
+            />
+          </li>
+        ))} -->
+
+        <div class="parent-class bg-pattern grid gap-5 p-6">
+          <div onclick='window.history.back()'>
+            <Card>
+              <div class="button-container flex items-center">
+                <Button>&LeftArrow; Go back</Button>
+                <h2 class='text-3xl md:text-4xl lg:text-6xl dm-serif mb-2 ml-0 md:ml-6 lg:ml-8'>
+                  {title}
+                </h2>
+              </div>
+            </Card>
+          </div>
+          {galleryUrls && galleryUrls.length > 0 && (
+            <div class="gallery-class">
+              <ul class="grid gap-5 grid-cols-[repeat(auto-fit, minmax(350px, 1fr))] lg:grid flex justify-center">
+                {galleryUrls.map((galleryUrl: string) => {
+                  const pathParts = galleryUrl.fsPath.split('/');
+                  const altText = pathParts.slice(-2).join('/');
+                  console.log(altText);
+                  return (
+                    <li key={galleryUrl}>
+                      <GalleryCard
+                        imgAlt={altText}
+                        imgSrc={galleryUrl}
+                        description=""
+                      />
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+        </div>
       
-      <style>
-        .gallery {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(max(250px, 15%), 1fr));
-          gap: 20px; /* Adjust gap to match the original gap */
-        }
-      
-        /* Adjust gap and column min-width for different screen sizes */
-        @media (min-width: 768px) {
-          .gallery {
-            grid-template-columns: repeat(auto-fit, minmax(max(275px, 15%), 1fr));
-          }
-        }
-      
-        @media (min-width: 1024px) {
-          .gallery {
-            grid-template-columns: repeat(auto-fit, minmax(max(300px, 15%), 1fr));
-          }
-        }
-      
-        li {
-          list-style: none;
-        }
-      </style>
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(250px, 15%), 1fr));
+  }
+  
+  /* Adjust gap and column min-width for different screen sizes */
+  @media (min-width: 768px) {
+    ul {
+      grid-template-columns: repeat(auto-fit, minmax(max(275px, 15%), 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    ul {
+      grid-template-columns: repeat(auto-fit, minmax(max(300px, 15%), 1fr));
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  :global(#root) {
+    flex: 1;
+  }
+
+  .bg-pattern {
+    background: repeating-linear-gradient(
+      45deg,
+      #F4F0D9,
+      #F4F0D9 20px,
+      #1b3c4f 20px,
+      #1b3c4f 40px,
+      #a95548 40px,
+      #a95548 60px,
+      #579763 60px,
+      #579763 80px
+    );
+    background-size: 113.1px 113.1px;
+    animation: moveBackground 6s linear infinite;
+  }
+
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -113.1px 0;
+    }
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+</style>
