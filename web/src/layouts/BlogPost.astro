@@ -78,12 +78,12 @@ console.log(galleryUrls);
         <div class="parent-class bg-pattern grid gap-5 p-6">
             <Card>
               <div class="button-container flex flex-wrap items-center">
-                <div onclick='window.history.back()', class="mr-4 md:mr-6 lg:mr-8">
+                <div onclick='window.history.back()', class="mr-4 md:mr-6 lg:mr-7">
                 <Button>
                   &LeftArrow; Go back
                 </Button>
                 </div>
-                <h2 class='texto-chulo text-3xl md:text-4xl lg:text-6xl dm-serif mb-0 mt- md:'>
+                <h2 class='texto-chulo text-3xl md:text-4xl lg:text-6xl dm-serif mb-0 mt-0'>
                   {title}
                 </h2>
               </div>
@@ -194,28 +194,3 @@ console.log(galleryUrls);
 </style>
 
 
-<script>
-  function checkWrapping() {
-    const container = document.querySelector('.button-container');
-    const button = container.children[0]; // Assuming the first child is the button container
-    const textoChulo = document.querySelector('.texto-chulo');
-
-    // Ensure we have the elements to compare
-    if (!button || !textoChulo) return;
-
-    // Compare positions to detect wrapping
-    const buttonRect = button.getBoundingClientRect();
-    const textoChuloRect = textoChulo.getBoundingClientRect();
-
-    // Check if the bottom of the button is greater than the top of the text element
-    if (buttonRect.bottom > textoChuloRect.top) {
-      textoChulo.classList.add('wrapped');
-    } else {
-      textoChulo.classList.remove('wrapped');
-    }
-  }
-
-  // Run the function on window resize and initial load
-  window.addEventListener('resize', checkWrapping);
-  document.addEventListener('DOMContentLoaded', checkWrapping);
-</script>
