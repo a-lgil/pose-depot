@@ -10,10 +10,10 @@ tags:
   - OpenPose
 imgUrl: '../../../../collections/1_Double_Peace_Sign/Cover.png'
 galleryUrls:
-  - '../../../../collections/1_Double_Peace_Sign/Canny.png'
-  - '../../../../collections/1_Double_Peace_Sign/CannyHand.png'
   - '../../../../collections/1_Double_Peace_Sign/Depth.png'
   - '../../../../collections/1_Double_Peace_Sign/DepthHand.png'
+  - '../../../../collections/1_Double_Peace_Sign/Canny.png'
+  - '../../../../collections/1_Double_Peace_Sign/CannyHand.png'
   - '../../../../collections/1_Double_Peace_Sign/OpenPoseFull.png'
   - '../../../../collections/1_Double_Peace_Sign/OpenPose.png'
   - '../../../../collections/1_Double_Peace_Sign/OpenPoseHand.png'
