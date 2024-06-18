@@ -3,7 +3,7 @@ title: "Collection #1: Double Peace Sign"
 pubDate: 2024/06/14
 author: "a-lgil"
 tags:
-  - Female ♀️
+  - Female
   - Depth
   - Canny
   - Normal
