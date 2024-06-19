@@ -3,15 +3,6 @@ import datetime
 from tkinter import Tk
 from tkinter.filedialog import askdirectory
 
-# Function to parse the title
-def parse_title(folder):
-    parts = folder.split('_')
-    collection_number = parts[0]
-    # Join the rest of the parts to form the title
-    description = ' '.join(parts[1:])
-    return f"Collection #{collection_number}: {description.replace('_', ' ')}"
-
-# Open a dialog to select a folder
 def select_folder():
     root = Tk()
     root.withdraw()  # Hide the main window
@@ -19,63 +10,92 @@ def select_folder():
     root.destroy()  # Close the tkinter window
     return folder_path
 
-# Main function to create the markdown file
+# Extract the numerical suffix from the filename
+def get_suffix(image_name):
+    base_name = os.path.splitext(image_name)[0]
+    parts = base_name.split('_')
+    if len(parts) > 1:
+        try:
+            return int(parts[-1])
+        except ValueError:
+            return 0  # Default to 0 for non-numeric or no suffix
+    return 0
+
+# Determine the category order index for sorting
+def get_category_order(image_name, category_order):
+    for i, prefix in enumerate(category_order):
+        if image_name.lower().startswith(prefix.lower()):
+            return i
+    return len(category_order)  # Non-specified images go at the end
+
+# Extract the base name (without suffix and extension)
+def get_base_name(image_name):
+    return os.path.splitext(image_name)[0].split('_')[0]
+
+# Sorting function for images
+def sort_images(images):
+    category_order = ["Depth", "DepthHand", "Canny", "CannyHand", "Normal", "NormalHand", 
+                      "OpenPoseFull", "OpenPose", "OpenPoseHand"]
+
+    # Define sorting key
+    def sort_key(image_name):
+        return (get_suffix(image_name), get_category_order(get_base_name(image_name), category_order))
+    
+    # Sort the images
+    sorted_images = sorted(images, key=sort_key)
+    
+    # Move 'Example' images to the end
+    example_images = [img for img in sorted_images if 'example' in os.path.basename(img).lower()]
+    sorted_images = [img for img in sorted_images if 'example' not in os.path.basename(img).lower()]
+    sorted_images.extend(example_images)
+
+    return sorted_images
+
+# Create markdown content
 def create_markdown():
-    # Select folder using tkinter
     folder_path = select_folder()
     if not folder_path:
         print("No folder selected.")
         return
-    
+
     folder_name = os.path.basename(folder_path)
     base_url = "../../../../collections/"
-
-    # Get today's date in the desired format
     pub_date = datetime.datetime.today().strftime('%Y/%m/%d')
-
-    # Set the author
     author = "a-lgil"
 
-    # Initialize the tags based on the folder name
     tags = []
     if folder_name[1] == 'F':
         tags.append("Female")
     elif folder_name[1] == 'M':
         tags.append("Male")
 
-    # List of predefined tags to look for in the image names
     predefined_tags = ["Depth", "Canny", "Normal", "OpenPose"]
 
-    # Get list of images from the folder and process tags
     gallery_urls = []
-    example_url = None
+    image_paths = []
     img_url = ""
     for image in os.listdir(folder_path):
         if image.endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp')):
             image_path = f"{base_url}{folder_name}/{image}"
             if image == "Cover.png":
                 img_url = image_path
-            elif image == "Example.png":
-                example_url = image_path  # Store Example.png path to add it last
             else:
-                gallery_urls.append(image_path)
-            
+                image_paths.append(image_path)
+
             for tag in predefined_tags:
                 if tag in image:
                     tags.append(tag)
 
-    # Add Example.png as the last item in the list if it exists
-    if example_url:
-        gallery_urls.append(example_url)
+    if img_url == "":
+        print("Warning: Cover.png not found!")
 
-    # Remove duplicates while preserving order
+    gallery_urls = sort_images(image_paths)
     seen = set()
     tags = [x for x in tags if not (x in seen or seen.add(x))]
 
-    # Create the markdown content using concatenation
     markdown_content = (
         "---\n"
-        + f"title: \"{parse_title(folder_name)}\"\n"
+        + f"title: \"Collection #{folder_name.split('_')[0]}: {folder_name.split('_')[1].replace('_', ' ')}\"\n"
         + f"pubDate: \"{pub_date}\"\n"
         + f"author: \"{author}\"\n"
         + "tags:\n"
@@ -88,16 +108,12 @@ def create_markdown():
         + "---\n"
     )
 
-    # Define the output file name
-    first_section = folder_name.split('_')[0]
-    output_file = os.path.join(folder_path, f"collection_{first_section}.md")
+    output_file = os.path.join(folder_path, f"collection_{folder_name.split('_')[0]}.md")
 
-    # Save to a markdown file in the selected folder
     with open(output_file, 'w') as file:
         file.write(markdown_content)
 
     print(f"Markdown file '{output_file}' created successfully inside the folder '{folder_path}'.")
 
-# Run the main function
 if __name__ == "__main__":
     create_markdown()
