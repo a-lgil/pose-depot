@@ -1,5 +1,5 @@
 ---
-title: "Collection #3F: Fighting"
+title: "Collection #3F: Fighting Pose"
 pubDate: "2024/06/19"
 author: "a-lgil"
 tags:
