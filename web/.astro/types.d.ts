@@ -126,44 +126,37 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"blogpost-1.md": {
-	id: "blogpost-1.md";
-  slug: "blogpost-1";
+"collection_1.md": {
+	id: "collection_1.md";
+  slug: "collection_1";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"blogpost-3.md": {
-	id: "blogpost-3.md";
-  slug: "blogpost-3";
+"collection_2F.md": {
+	id: "collection_2F.md";
+  slug: "collection_2f";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"blogpost-4.md": {
-	id: "blogpost-4.md";
-  slug: "blogpost-4";
+"collection_2M.md": {
+	id: "collection_2M.md";
+  slug: "collection_2m";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"blogpost-5.md": {
-	id: "blogpost-5.md";
-  slug: "blogpost-5";
+"collection_3F.md": {
+	id: "collection_3F.md";
+  slug: "collection_3f";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"blogpost-6.md": {
-	id: "blogpost-6.md";
-  slug: "blogpost-6";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"blogpost-7.md": {
-	id: "blogpost-7.md";
-  slug: "blogpost-7";
+"collection_3M.md": {
+	id: "collection_3M.md";
+  slug: "collection_3m";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
