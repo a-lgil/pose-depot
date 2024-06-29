@@ -1,0 +1,80 @@
+---
+title: "Collection #7F: Glamorous Greeting"
+pubDate: "2024/06/29"
+author: "a-lgil"
+tags:
+  - Female
+  - Canny
+  - Depth
+  - Normal
+  - OpenPose
+imgUrl: '../../../../collections/7F_Glamorous_Greeting/Cover.png'
+galleryUrls:
+  - ../../../../collections/7F_Glamorous_Greeting/Canny.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/Canny_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose_1.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/Canny_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose_2.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/Canny_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose_3.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/Canny_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose_4.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/Canny_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose_5.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/Canny_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose_6.png
+  - ../../../../collections/7F_Glamorous_Greeting/CannyHand_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/Canny_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/DepthHand_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/Depth_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/NormalHand_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseFull_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPoseHand_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/OpenPose_7.png
+  - ../../../../collections/7F_Glamorous_Greeting/Example.png
+description: ''
+layout: '../../layouts/BlogPost.astro'
+---
