@@ -19,13 +19,13 @@ const posts = await getCollection('blog').then((posts) =>
   <Card>
     <div class='flex justify-between items-start'>
       <h2 class='text-3xl md:text-4xl lg:text-6xl mb-5 dm-serif'>
-        Recent Blogposts
+        Recent Additions
       </h2>
       <div class='hidden md:block'>
-        <Button href={import.meta.env.BASE_URL + '/gallery/'}>Go to blog &rarr;</Button>
+        <Button href={import.meta.env.BASE_URL + '/gallery/'}>Visit the gallery &rarr;</Button>
       </div>
       <div class='block md:hidden'>
-        <Button href={import.meta.env.BASE_URL + '/gallery/'}>Go to blog</Button>
+        <Button href={import.meta.env.BASE_URL + '/gallery/'}>Visit the gallery &rarr;</Button>
       </div>
     </div>
     <BlogList posts={posts} />

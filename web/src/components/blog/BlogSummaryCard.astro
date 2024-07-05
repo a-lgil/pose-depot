@@ -18,11 +18,11 @@ const { post } = Astro.props;
   description={post.data.description}
 >
   <div class='flex justify-end my-4'>
-    <Button href={import.meta.env.BASE_URL + `/gallery/${post.slug}/`}>Read post &rarr;</Button>
+    <Button href={import.meta.env.BASE_URL + `/gallery/${post.slug}/`}>View collection &rarr;</Button>
   </div>
 
   <div class='sm:inline-block'>
-    <p class='poppins mt-2'>tags:</p>
+    <p class='poppins mt-2 mb-1'>Tags:</p>
     <div class='flex justify-between items-center'>
       <ul class='flex flex-wrap gap-4 mt-2'>
         {
