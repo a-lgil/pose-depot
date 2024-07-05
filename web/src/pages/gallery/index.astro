@@ -2,10 +2,14 @@
 import { getCollection } from 'astro:content';
 import Layout from '@layouts/Default.astro';
 import BlogList from '@components/blog/BlogList.astro';
+import Card from '@components/custom/Card.astro';
+import Pill from '@components/custom/Pill.astro';
 
 const posts = await getCollection('blog').then((collection) =>
   collection.reverse()
 );
+
+const uniqueTags = new Set(posts.flatMap(post => post.data.tags));
 ---
 
 <Layout
@@ -14,7 +18,32 @@ const posts = await getCollection('blog').then((collection) =>
   pageTitle='Brutal Blog'
 >
   <main class='bg-pattern p-6'>
+
+    <!-- Tag search card spans full width on new row -->
+    <div class='col-span-2 mb-6'>
+      <Card>
+        <div class='flex items-center flex-wrap'>
+          <h2 class='text-3xl md:text-4xl lg:text-6xl dm-serif mb-2 mr-0 md:mr-4 lg:mr-5'>
+            Tag search:
+          </h2>
+          <ul class='flex gap-4 flex-wrap justify-start mb-2 mt-2'>
+            {
+              Array.from(uniqueTags).map((tag) => (
+                <li>
+                  <a class="sanchez" href={import.meta.env.BASE_URL + `/gallery/tags/${tag.toLowerCase()}/`}>
+                    <Pill>{tag}</Pill>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </Card>
+    </div>
+
+    <!-- Blog List -->
     <BlogList posts={posts} />
+
   </main>
 </Layout>
 
