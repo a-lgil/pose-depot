@@ -7,6 +7,9 @@ interface Props {
 }
 
 const { posts } = Astro.props;
+
+// Sort posts by pubDate in descending order (newest first)
+posts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
 <ul class='grid gap-5  grid-cols-[repeat(auto-fit, minmax(350px, 1fr))]'>
