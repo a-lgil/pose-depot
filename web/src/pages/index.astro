@@ -38,7 +38,7 @@ const { post } = Astro.props;
             <p class='outfit text-xl md:text-3xl lg:text-5xl'>
               A minimalistic, neobrutalism theme for Astro.
             </p>
-            <Button target={'_self'} href={import.meta.env.BASE_URL + '/blog/'}>
+            <Button target={'_self'} href={import.meta.env.BASE_URL + '/gallery/'}>
               Check out the blog &rarr;
             </Button>
           </div>
@@ -69,7 +69,7 @@ const { post } = Astro.props;
               {
                 Array.from(uniqueTags).map((tag) => (
                   <li>
-                    <a class="sanchez" href={import.meta.env.BASE_URL + `/blog/tags/${tag.toLowerCase()}/`}>
+                    <a class="sanchez" href={import.meta.env.BASE_URL + `/gallery/tags/${tag.toLowerCase()}/`}>
                       <Pill>{tag}</Pill>
                     </a>
                   </li>

@@ -22,10 +22,10 @@ const posts = await getCollection('blog').then((posts) =>
         Recent Blogposts
       </h2>
       <div class='hidden md:block'>
-        <Button href={import.meta.env.BASE_URL + '/blog/'}>Go to blog &rarr;</Button>
+        <Button href={import.meta.env.BASE_URL + '/gallery/'}>Go to blog &rarr;</Button>
       </div>
       <div class='block md:hidden'>
-        <Button href={import.meta.env.BASE_URL + '/blog/'}>Go to blog</Button>
+        <Button href={import.meta.env.BASE_URL + '/gallery/'}>Go to blog</Button>
       </div>
     </div>
     <BlogList posts={posts} />
