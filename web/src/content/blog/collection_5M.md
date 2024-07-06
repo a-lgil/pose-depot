@@ -8,6 +8,8 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Jumping
+  - Holding Object
 imgUrl: '../../../../collections/5M_Greatsword_Swing/Cover.png'
 galleryUrls:
   - ../../../../collections/5M_Greatsword_Swing/Canny.png

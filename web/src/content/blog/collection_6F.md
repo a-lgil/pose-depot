@@ -8,6 +8,8 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Standing
+  - Holding Object
 imgUrl: '../../../../collections/6F_Concert_Spotlight/Cover.png'
 galleryUrls:
   - ../../../../collections/6F_Concert_Spotlight/Canny.png

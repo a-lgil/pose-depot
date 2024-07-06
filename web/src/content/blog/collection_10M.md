@@ -8,6 +8,7 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Sitting
 imgUrl: '../../../../collections/10M_Sitting_on_Desk/Cover.png'
 galleryUrls:
   - ../../../../collections/10M_Sitting_on_Desk/Canny.png

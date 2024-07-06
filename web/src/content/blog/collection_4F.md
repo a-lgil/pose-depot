@@ -8,6 +8,7 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Standing
 imgUrl: '../../../../collections/4F_Rawr/Cover.png'
 galleryUrls:
   - ../../../../collections/4F_Rawr/Canny.png

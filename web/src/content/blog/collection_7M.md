@@ -8,6 +8,7 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Standing
 imgUrl: '../../../../collections/7M_Glamorous_Greeting/Cover.png'
 galleryUrls:
   - ../../../../collections/7M_Glamorous_Greeting/Canny.png

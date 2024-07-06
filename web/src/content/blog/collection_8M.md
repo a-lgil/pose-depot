@@ -8,6 +8,8 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Sitting
+  - Selfie
 imgUrl: '../../../../collections/8M_Bed_Mirror_Selfie/Cover.png'
 galleryUrls:
   - ../../../../collections/8M_Bed_Mirror_Selfie/Canny.png

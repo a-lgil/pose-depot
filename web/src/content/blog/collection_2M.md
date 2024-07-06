@@ -8,6 +8,7 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Standing
 imgUrl: '../../../../collections/2M_Hand_on_Hip/Cover.png'
 galleryUrls:
   - ../../../../collections/2M_Hand_on_Hip/Depth.png

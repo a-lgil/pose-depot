@@ -8,6 +8,7 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Standing
 imgUrl: '../../../../collections/3F_Fighting_Pose/Cover.png'
 galleryUrls:
   - ../../../../collections/3F_Fighting_Pose/Canny.png
