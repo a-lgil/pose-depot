@@ -10,6 +10,7 @@ tags:
   - OpenPose
   - Sitting
   - Selfie
+  - Holding Object
 imgUrl: '../../../../collections/8F_Bed_Mirror_Selfie/Cover.png'
 galleryUrls:
   - ../../../../collections/8F_Bed_Mirror_Selfie/Canny.png

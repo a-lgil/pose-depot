@@ -9,6 +9,7 @@ tags:
   - Depth
   - Normal
   - OpenPose
+  - Kneeling
 imgUrl: '../../../../collections/9_Peeking_from_Box/Cover.png'
 galleryUrls:
   - ../../../../collections/9_Peeking_from_Box/Canny.png
