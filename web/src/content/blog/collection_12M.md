@@ -1,0 +1,73 @@
+---
+title: "Collection #12M: Reaching during Freefall"
+pubDate: "2024/07/09"
+author: "a-lgil"
+tags:
+  - Male
+  - Canny
+  - Depth
+  - Normal
+  - OpenPose
+  - Jumping
+imgUrl: '../../../../collections/12M_Reaching_during_Freefall/Cover.png'
+galleryUrls:
+  - ../../../../collections/12M_Reaching_during_Freefall/Canny.png
+  - ../../../../collections/12M_Reaching_during_Freefall/CannyHand.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Depth.png
+  - ../../../../collections/12M_Reaching_during_Freefall/DepthHand.png
+  - ../../../../collections/12M_Reaching_during_Freefall/NormalHand.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPose.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseFull.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseHand.png
+  - ../../../../collections/12M_Reaching_during_Freefall/CannyHand_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Canny_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/DepthHand_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Depth_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/NormalHand_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseFull_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseHand_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPose_1.png
+  - ../../../../collections/12M_Reaching_during_Freefall/CannyHand_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Canny_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/DepthHand_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Depth_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/NormalHand_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseFull_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseHand_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPose_2.png
+  - ../../../../collections/12M_Reaching_during_Freefall/CannyHand_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Canny_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/DepthHand_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Depth_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/NormalHand_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseFull_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseHand_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPose_3.png
+  - ../../../../collections/12M_Reaching_during_Freefall/CannyHand_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Canny_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/DepthHand_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Depth_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/NormalHand_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseFull_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseHand_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPose_4.png
+  - ../../../../collections/12M_Reaching_during_Freefall/CannyHand_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Canny_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/DepthHand_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Depth_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/NormalHand_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseFull_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseHand_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPose_5.png
+  - ../../../../collections/12M_Reaching_during_Freefall/CannyHand_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Canny_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/DepthHand_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Depth_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/NormalHand_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseFull_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPoseHand_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/OpenPose_6.png
+  - ../../../../collections/12M_Reaching_during_Freefall/Example.png
+description: ''
+layout: '../../layouts/BlogPost.astro'
+---
