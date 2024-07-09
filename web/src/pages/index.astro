@@ -48,20 +48,23 @@ const { post } = Astro.props;
       <!-- Second card -->
       <div class='col-span-1'>
         <Card>
-          <h2 class='text-3xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            Las gemas de cristal?
-          </h2>
-          <p class='poppins'>
-            Te ayudan si estás mal, pero no te las comas.
-            Gnomo de jardín vs. gnomo de azotea. Texto de prueba elegantesrrimo.
-          </p>
-          <div class='image-container'>
-            <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/Depth.png'} alt="Depth" class="image"> 
-            <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/Example.png'} alt="Example" class="image foreground_1"> 
-            <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/Canny.png'} alt="Canny" class="image foreground_2"> 
-            <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/NormalHand.png'} alt="NormalHand" class="image foreground_3">
-            <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/OpenPoseFull.png'} alt="OpenPoseFull" class="image foreground_4"> 
-            
+          <div class='flex flex-col md:flex-row gap-4 items-top'>
+            <div class='flex-1'>
+              <h2 class='text-3xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
+                Las gemas de cristal?
+              </h2>
+              <p class='poppins'>
+                Te ayudan si estás mal, pero no te las comas.
+                Gnomo de jardín vs. gnomo de azotea. Texto de prueba elegantesrrimo.
+              </p>
+            </div>
+            <div class='flex-1 image-container'>
+              <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/Depth.png'} alt="Depth" class="image"> 
+              <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/Example.png'} alt="Example" class="image foreground_1"> 
+              <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/Canny.png'} alt="Canny" class="image foreground_2"> 
+              <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/NormalHand.png'} alt="NormalHand" class="image foreground_3">
+              <img src={import.meta.env.BASE_URL + '/src/assets/index_generation_example/4F/OpenPoseFull.png'} alt="OpenPoseFull" class="image foreground_4"> 
+            </div>
           </div>
         </Card>
       </div>
@@ -141,11 +144,11 @@ const { post } = Astro.props;
   .image-container {
     position: relative;
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     aspect-ratio: 1; /* This ensures the container maintains a 1:1 aspect ratio */
     height: auto;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .image {
