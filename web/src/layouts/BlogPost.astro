@@ -24,6 +24,9 @@ console.log(entryImgUrl);
 // For each gallery URL, we need to get the image URL
 const galleryUrls = entry.data.galleryUrls;
 console.log(galleryUrls);
+
+// Define the fallback URL
+const fallbackUrl: string = import.meta.env.BASE_URL + '/gallery/';
 ---
 
 <Layout
@@ -31,88 +34,43 @@ console.log(galleryUrls);
   description={description as string}
   ogImage={ogImage}
 >
-  <!-- <main class='p-6 lg:grid flex justify-center'> -->
-    <!-- <BlogSideBar headings={headings} /> -->
-    <!-- <BlogContent content={content}> -->
-      <!-- <slot /> -->
-      <!-- <SummaryCard
-        title={title}
-        imgAlt={title}
-        imgSrc={entryImgUrl}
-        description={description}
-      >
-        <p>Published on: {pubDate}</p>
-        <p>Author: {author}</p>
-        <div class='sm:inline-block'>
-          <p class='poppins mt-2'>Tags:</p>
-          <div class='flex justify-between items-center'>
-            <ul class='flex flex-wrap gap-4 mt-2'>
-              {tags.map((tag: string) => (
-                <li>
-                  <a class="sanchez" href={import.meta.env.BASE_URL + `/blog/tags/${tag.toLowerCase()}/`}>
-                    <Pill>{tag}</Pill>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+  <div class="parent-class bg-pattern grid gap-5 p-6">
+    <Card>
+      <div class="button-container flex flex-wrap items-center">
+        <div onclick={`if (window.history.length > 1) { window.history.back(); } else { window.location.href = '${fallbackUrl}'; }`} class="mr-4 md:mr-6 lg:mr-7">
+          <Button>
+            &LeftArrow; Go back
+          </Button>
         </div>
-        <p>Layout: {layout}</p>
-        <p>Gallery: {galleryUrls && galleryUrls.length > 0 ? 'Yes' : 'No'}</p>
-        <p>tags: {tags}</p>
-      </SummaryCard> -->
+        <h2 class='texto-chulo text-3xl md:text-4xl lg:text-6xl dm-serif mb-0 mt-0'>
+          {title}
+        </h2>
+      </div>
+    </Card>
+    {galleryUrls && galleryUrls.length > 0 && (
+      <div class="gallery-class">
+        <ul class="grid gap-5 grid-cols-[repeat(auto-fit, minmax(350px, 1fr))] lg:grid flex justify-center">
+          {galleryUrls.map((galleryUrl: string) => {
+            const pathParts = galleryUrl.fsPath.split('/');
+            const altText = pathParts.slice(-2).join('/');
+            console.log(altText);
+            return (
+              <li key={galleryUrl}>
+                <GalleryCard
+                  imgAlt={altText}
+                  imgSrc={galleryUrl}
+                  description=""
+                />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    )}
+  </div>
+</Layout>
 
-
-      <!-- <ul class="grid gap-5 grid-cols-[repeat(auto-fit, minmax(350px, 1fr))]">
-        {galleryUrls.map((galleryUrl: string) => (
-          <li key={galleryUrl}>
-            <SummaryCard
-              title=""
-              imgAlt=""
-              imgSrc={galleryUrl}
-              description=""
-            />
-          </li>
-        ))} -->
-
-        <div class="parent-class bg-pattern grid gap-5 p-6">
-            <Card>
-              <div class="button-container flex flex-wrap items-center">
-                <div onclick='window.history.back()', class="mr-4 md:mr-6 lg:mr-7">
-                <Button>
-                  &LeftArrow; Go back
-                </Button>
-                </div>
-                <h2 class='texto-chulo text-3xl md:text-4xl lg:text-6xl dm-serif mb-0 mt-0'>
-                  {title}
-                </h2>
-              </div>
-              
-            </Card>
-          {galleryUrls && galleryUrls.length > 0 && (
-            <div class="gallery-class">
-              <ul class="grid gap-5 grid-cols-[repeat(auto-fit, minmax(350px, 1fr))] lg:grid flex justify-center">
-                {galleryUrls.map((galleryUrl: string) => {
-                  const pathParts = galleryUrl.fsPath.split('/');
-                  const altText = pathParts.slice(-2).join('/');
-                  console.log(altText);
-                  return (
-                    <li key={galleryUrl}>
-                      <GalleryCard
-                        imgAlt={altText}
-                        imgSrc={galleryUrl}
-                        description=""
-                      />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          )}
-        </div>
-      
 <style>
-
   /* Default styles for texto-chulo */
   .texto-chulo {
     /* Any other styles you might need */
@@ -192,5 +150,3 @@ console.log(galleryUrls);
     justify-content: flex-start;
   }
 </style>
-
-
