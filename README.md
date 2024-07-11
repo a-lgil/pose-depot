@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-    <a href="a-lgil.github.io/pose-depot/" target="_blank">
+    <a href="https://a-lgil.github.io/pose-depot/" target="_blank">
         <img width="75%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/logo/ezgif-3-a558e401d3.gif" alt="Pose Depot logo">
     </a>
 </p>
@@ -11,16 +11,16 @@
 <a target="_blank" href="https://github.com/a-lgil/pose-depot/commits"><img src="https://img.shields.io/github/commit-activity/y/a-lgil/pose-depot.svg"/></a>
 </p>
 
-[Pose Depot](a-lgil.github.io/pose-depot/) is a project that aims to build a high quality collection of images depicting a variety of poses, each provided from different angles and their corresponding depth, canny, normal and OpenPose versions.
+[Pose Depot](https://a-lgil.github.io/pose-depot/) is a project that aims to build a high quality collection of images depicting a variety of poses, each provided from different angles and their corresponding depth, canny, normal and OpenPose versions.
 The aim is to provide a comprehensive dataset designed for use with ControlNets in text-to-image diffusion models, such as Stable Diffusion, providing an additional layer of control to the generation process.
 
 
 
-The pose collections can be directly downloaded from [Releases](https://github.com/a-lgil/pose-depot/releases), but with ease of exploration in mind, I've created a [web](a-lgil.github.io/pose-depot/) that allows users to conveniently browse, filter by tags, and view the different collections.
+The pose collections can be directly downloaded from [Releases](https://github.com/a-lgil/pose-depot/releases), but with ease of exploration in mind, I've created a [webpage](https://a-lgil.github.io/pose-depot/) that allows users to conveniently browse, filter by tags, and view the different collections and their content.
 
 <br/>
 <p align="center">
-    <a target="_blank" href="https://github.com/a-lgil/pose-depot"><img width="80%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/images/gallery.png" alt="Gallery">
+    <a target="_blank" href="https://a-lgil.github.io/pose-depot/"><img width="80%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/images/gallery.png" alt="Gallery">
 </p>
 <br/>
 
