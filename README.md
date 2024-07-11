@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
     <a href="https://a-lgil.github.io/pose-depot/" target="_blank">
-        <img width="75%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/logo/ezgif-3-a558e401d3.gif" alt="Pose Depot logo">
+        <img width="100%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/logo/ezgif-3-a558e401d3.gif" alt="Pose Depot logo">
     </a>
 </p>
 
@@ -20,7 +20,7 @@ The pose collections can be directly downloaded from [Releases](https://github.c
 
 <br/>
 <p align="center">
-    <a target="_blank" href="https://a-lgil.github.io/pose-depot/"><img width="80%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/images/gallery.png" alt="Gallery">
+    <a target="_blank" href="https://a-lgil.github.io/pose-depot/"><img width="100%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/images/gallery.png" alt="Gallery">
 </p>
 <br/>
 
