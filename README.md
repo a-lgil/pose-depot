@@ -11,8 +11,10 @@
 <a target="_blank" href="https://github.com/a-lgil/pose-depot/commits"><img src="https://img.shields.io/github/commit-activity/y/a-lgil/pose-depot.svg"/></a>
 </p>
 
-[Pose Depot](https://a-lgil.github.io/pose-depot/) is a project that aims to build a high quality collection of images depicting a variety of poses, each provided from different angles and their corresponding depth, canny, normal and OpenPose versions.
-The aim is to provide a comprehensive dataset designed for use with ControlNets in text-to-image diffusion models, such as Stable Diffusion, providing an additional layer of control to the generation process.
+##
+
+Pose Depot is a project that aims to build a high quality collection of images depicting a variety of poses, each provided from different angles with their corresponding depth, canny, normal and OpenPose versions.
+The aim is to provide a comprehensive dataset designed for use with ControlNets in text-to-image diffusion models, such as Stable Diffusion, providing an additional layer of control to the image generation process.
 
 
 
