@@ -6,6 +6,11 @@
 </p>
 
 <p align="center">
+A collection of ControlNet poses.
+    
+</p>
+
+<p align="center">
 <a target="_blank" href="LICENSE"><img src="https://img.shields.io/github/license/a-lgil/pose-depot.svg"/></a> 
 <a target="_blank" href="https://github.com/a-lgil/pose-depot/actions"><img src="https://img.shields.io/github/actions/workflow/status/a-lgil/pose-depot/deploy.yml"/></a>
 <a target="_blank" href="https://github.com/a-lgil/pose-depot/commits"><img src="https://img.shields.io/github/commit-activity/y/a-lgil/pose-depot.svg"/></a>
@@ -18,7 +23,7 @@ The aim is to provide a comprehensive dataset designed for use with ControlNets 
 
 
 
-The pose collections can be directly downloaded from [Releases](https://github.com/a-lgil/pose-depot/releases), but with ease of exploration in mind, I've created a [webpage](https://a-lgil.github.io/pose-depot/) that allows users to conveniently browse, filter by tags, and view the different collections and their content.
+The pose collections can be downloaded directly from [Releases](https://github.com/a-lgil/pose-depot/releases), but with ease of exploration in mind, I've created a [webpage](https://a-lgil.github.io/pose-depot/) that allows users to conveniently browse, filter by tags, and view the different collections and their content.
 
 <br/>
 <p align="center">
