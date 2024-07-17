@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
     <a href="https://a-lgil.github.io/pose-depot/" target="_blank">
-        <img width="100%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/logo/ezgif-3-a558e401d3.gif" alt="Pose Depot logo">
+        <img width="100%" src="assets/logo/ezgif-3-a558e401d3.gif" alt="Pose Depot logo" style="border-radius: 0.6rem">
     </a>
 </p>
 
@@ -22,34 +22,26 @@ The pose collections can be directly downloaded from [Releases](https://github.c
 
 <br/>
 <p align="center">
-    <a target="_blank" href="https://a-lgil.github.io/pose-depot/"><img width="100%" src="https://github.com/a-lgil/pose-depot/blob/main/assets/images/gallery.png" alt="Gallery">
+    <a target="_blank" href="https://a-lgil.github.io/pose-depot/"><img width="100%" src="assets/images/gallery.png" alt="Gallery" style="border-radius: 0.6rem;">
 </p>
 <br/>
 
+## 🤝&nbsp;Missing a specific pose? Found a bug? Have a question?
 
-## 🚀&nbsp;Installation and Documentation
+Feel free to [**file a new issue**](https://github.com/a-lgil/pose-depot/issues/new/choose) with a respective title and description on the the [sulu/sulu](https://github.com/sulu/sulu/issues) repository. If you already found a solution to your problem, **we would love to review your pull request**! Have a look at our [contribution guidelines](http://docs.sulu.io/en/latest/developer/contributing/) to find out about our coding standards.
+
+
+## 🚀&nbsp;Installation
 
 The [sulu/skeleton](https://github.com/sulu/skeleton) repository provides a **pre-configured project template** to quick-start your development. Visit the official [Sulu documentation](http://docs.sulu.io/en/latest/book/getting-started.html) to find out how to use the project template for starting your own Sulu project.
 
+## 💻&nbsp;Software & Tools
 
-## ❤️&nbsp;Community and Contributions
+This project was developed using the following software and tools:
 
-The Sulu content management system is a **community-driven open source project** backed by various partner companies. We are committed to a fully transparent development process and **highly appreciate any contributions**. Whether you are helping us fixing bugs, proposing new feature, improving our documentation or spreading the word - **we would love to have you as part of the Sulu community**.
-
-
-## 📫&nbsp;Have a question? Want to chat? Ran into a problem?
-
-We are happy to welcome you in our official [Slack channel](https://sulu.io/services-and-support) or answer your questions via [GitHub Discussions](https://github.com/sulu/sulu/discussions)! Obviously you can always **reach out to us directly** via the [Sulu twitter account](https://twitter.com/sulu) or post your question on [StackOverflow](https://stackoverflow.com/questions/tagged/sulu) with the official `sulu` tag.
-
-
-## 🤝&nbsp;Found a bug? Missing a specific feature?
-
-Feel free to **file a new issue** with a respective title and description on the the [sulu/sulu](https://github.com/sulu/sulu/issues) repository. If you already found a solution to your problem, **we would love to review your pull request**! Have a look at our [contribution guidelines](http://docs.sulu.io/en/latest/developer/contributing/) to find out about our coding standards.
-
-
-## ✅&nbsp;Requirements
-
-Sulu requires a **PHP version higher or equal to 8.2** and is compatible with every **Symfony version starting from 5.4**. Have a look at the `require` section in the [composer.json](composer.json) of the [sulu/sulu](https://github.com/sulu/sulu) core framework to find an **up-to-date list of the requirements** of Sulu content management system.
+- [Affinity Photo and Designer](https://affinity.serif.com)
+- KKS Chara Studio
+- [ControlNet material generator for KKS](https://koikatsumodshop.booth.pm/items/5909983)
 
 ## ⚡&nbsp;Performance
 
