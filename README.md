@@ -39,9 +39,11 @@ The [sulu/skeleton](https://github.com/sulu/skeleton) repository provides a **pr
 
 This project was developed using the following software and tools:
 
-- [Affinity Photo and Designer](https://affinity.serif.com)
+- [Affinity Photo](https://affinity.serif.com/designer/)
+- [Affinity Designer](https://affinity.serif.com/photo/)
 - KKS Chara Studio
 - [ControlNet material generator for KKS](https://koikatsumodshop.booth.pm/items/5909983)
+- [Space Grotesk font](https://fonts.floriankarsten.com/space-grotesk)
 
 ## ⚡&nbsp;Performance
 
