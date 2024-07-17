@@ -37,7 +37,7 @@ const fallbackUrl: string = import.meta.env.BASE_URL + '/gallery/';
   <div class="parent-class bg-pattern grid gap-5 p-6">
     <Card>
       <div class="button-container flex flex-wrap items-center">
-        <div onclick={`if (window.history.length > 1) { window.history.back(); } else { window.location.href = '${fallbackUrl}'; }`} class="mr-4 md:mr-6 lg:mr-7">
+        <div onclick={`if (window.history.length > 1) { window.history.back(); } else { window.location.href = '${fallbackUrl}'; }`} class="mr-4 md:mr-6 lg:mr-7 unselectable">
           <Button>
             &LeftArrow; Go back
           </Button>
@@ -148,5 +148,12 @@ const fallbackUrl: string = import.meta.env.BASE_URL + '/gallery/';
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  .unselectable {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera and Edge */
   }
 </style>
