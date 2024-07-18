@@ -80,6 +80,10 @@ Depending on your use case or your preferences, you can choose to use one or mor
 
 If you are a beginner and don't know where to start, I recommend checking out [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and its [ControlNet extension](https://github.com/Mikubill/sd-webui-controlnet) to understand how to use these poses in text-to-image diffusion models. You can use [Stability Matrix](https://github.com/LykosAI/StabilityMatrix) to streamline the installation process.
 
+> \[!TIP]
+>
+> You can use the generation parameters from the example image included in every pose collection as reference.
+
 ## 💻&nbsp;Software & Tools
 
 This project was developed using the following software and tools:
