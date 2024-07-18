@@ -2,6 +2,7 @@ import os
 import zipfile
 from github import Github
 from datetime import datetime
+import re
 
 # Initialize GitHub API client with the token from environment variables
 token = os.getenv('GITHUB_TOKEN')
@@ -23,6 +24,19 @@ update_global_release = False
 # Initialize counters for the global release description
 n_collections = 0
 total_images = 0
+
+
+def transform_string(input_string):
+    """
+    Transform a string by replacing the first underscore with ': ' and subsequent underscores with ' '.
+    """
+    # Define the regex pattern to find underscores
+    pattern = r'_'
+
+    # Replace the first underscore with ': ' and subsequent underscores with ' '
+    transformed_string = re.sub(pattern, lambda m: ': ' if m.start() == input_string.find('_') else ' ', input_string)
+
+    return transformed_string
 
 # Create a global zip file that will contain all subfolders in collections
 with zipfile.ZipFile(global_zip_name, 'w') as global_zip:
@@ -55,12 +69,12 @@ with zipfile.ZipFile(global_zip_name, 'w') as global_zip:
                 # Check if Cover.png exists and create markdown for it
                 cover_path = os.path.join(full_dir_path, 'Cover.png')
                 if os.path.exists(cover_path):
-                    description = f'![Cover](./collections/{dir_name}/Cover.png | width=20%)\n\n{num_images_text}'
+                    description = f'<img src="collections/{dir_name}/Cover.png" alt="Cover" width="30%" />\n\n{num_images_text}'
                 else:
-                    description = f'Release of {dir_name}\n\n{num_images_text}'
+                    description = f'Release of {transform_string(dir_name)}, with {num_images_text}'
 
                 # Create a release for the subfolder and upload the zip file
-                release = repo.create_git_release(tag=dir_name, name=f'Release of {dir_name}', message=description)
+                release = repo.create_git_release(tag=dir_name, name=f'Collection {transform_string(dir_name)}', message=description)
                 release.upload_asset(zip_name)
                 os.remove(zip_name)  # Remove the local zip file after uploading
 
@@ -86,9 +100,9 @@ with zipfile.ZipFile(global_zip_name, 'w') as global_zip:
                     # Check if Cover.png exists and create markdown for it
                     cover_path = os.path.join(full_dir_path, 'Cover.png')
                     if os.path.exists(cover_path):
-                        description = f'![Cover](./collections/{dir_name}/Cover.png | width=20%)\n\n{num_images_text}'
+                        description = f'<img src="collections/{dir_name}/Cover.png" alt="Cover" width="30%" />\n\n{num_images_text}'
                     else:
-                        description = f'Updated release of {dir_name}\n\n{num_images_text}'
+                        description = f'Release of {transform_string(dir_name)}, with {num_images_text}'
 
                     # Update the release for the subfolder and upload the new zip file
                     release = repo.get_release_by_tag(dir_name)
@@ -112,7 +126,7 @@ if update_global_release:
     global_description = f'{n_collections} pose collections, totaling {total_images} ControlNet images'
     global_release = repo.create_git_release(
         tag='global-release', 
-        name='Global Release', 
+        name='Global Release - ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'), 
         message=global_description, 
         draft=False, 
         prerelease=False
