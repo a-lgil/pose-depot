@@ -122,16 +122,16 @@ with zipfile.ZipFile(global_zip_name, 'w') as global_zip:
 
 # Create and upload the global release containing all subfolders only if there are updates
 if update_global_release:
-    global_release = repo.get_release_asset('global-release') if 'global-release' in existing_releases else None
+    global_release = repo.get_release_by_tag('global-release') if 'global-release' in existing_releases else None
     if global_release:
         global_release.delete_release()
     global_description = f'{n_collections} pose collections, totaling {total_images} ControlNet images'
     global_release = repo.create_git_release(
         tag='global-release', 
-        name='Global Release - ' + datetime.now().strftime('%Y-%m-%d'), 
+        name=f'Global Release {datetime.now().strftime("%Y-%m-%d")}', 
         message=global_description, 
         draft=False, 
         prerelease=False
     )
     global_release.upload_asset(global_zip_name)
-os.remove(global_zip_name)  # Remove the local global zip file after uploading
+    os.remove(global_zip_name)  # Remove the local global zip file after uploading
