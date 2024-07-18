@@ -97,20 +97,6 @@ This project was developed using the following software and tools:
 - [Stability Matrix](https://github.com/LykosAI/StabilityMatrix)
 - [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-## ⚡&nbsp;Performance
-
-> \[!NOTE]
->
-> The complete list of reports can be found in the [📘 Lighthouse Reports][docs-lighthouse]
-
-|                   Desktop                   |                   Mobile                   |
-| :-----------------------------------------: | :----------------------------------------: |
-|              ![][chat-desktop]              |              ![][chat-mobile]              |
-| [📑 Lighthouse Report][chat-desktop-report] | [📑 Lighthouse Report][chat-mobile-report] |
-
-<div align="right">
-
-</div>
 
 ## 🎨&nbsp;Disclaimer: About Moral and Ethical Implications
 
@@ -121,11 +107,3 @@ So, feel free to do whatever you want with these poses. There's no such thing su
 ## 📘&nbsp;License
 
 Pose Depot is released under the under terms of the [Apache License 2.0](LICENSE).
-
-
-<!-- LINK GROUP -->
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-[blog]: https://lobehub.com/blog
-[chat-desktop]: https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg
-[chat-desktop-report]: https://lobehub.github.io/lobe-chat/lighthouse/chat/desktop/chat_preview_lobehub_com_chat.html
