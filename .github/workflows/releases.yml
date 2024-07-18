@@ -25,6 +25,6 @@ jobs:
 
     - name: Check and create releases
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub token from secrets
+        GITHUB_TOKEN: ${{ secrets.PAT }}  # Use GitHub token from secrets
       run: |
         python scripts/create_releases.py  # Run the Python script from the /scripts/ folder
