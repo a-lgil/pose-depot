@@ -1,4 +1,4 @@
-name: Release Subfolders
+name: Releases
 
 # Trigger the workflow on push to the main branch
 on:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Check out the repository
+      uses: actions/checkout@v4  # Check out the repository
 
     - name: Set up Python
       uses: actions/setup-python@v4  # Set up Python environment
