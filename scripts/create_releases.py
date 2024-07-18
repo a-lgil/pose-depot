@@ -126,7 +126,7 @@ if update_global_release:
     global_description = f'{n_collections} pose collections, totaling {total_images} ControlNet images'
     global_release = repo.create_git_release(
         tag='global-release', 
-        name='Global Release - ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'), 
+        name='Global Release - ' + datetime.now().strftime('%Y-%m-%d'), 
         message=global_description, 
         draft=False, 
         prerelease=False
