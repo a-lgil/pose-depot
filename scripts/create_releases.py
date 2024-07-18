@@ -80,6 +80,7 @@ with zipfile.ZipFile(global_zip_name, 'w') as global_zip:
 
             # Check if the subfolder has been modified since the last release
             else:
+                continue
                 last_release_time = existing_releases[dir_name]
                 subfolder_modified_time = datetime.fromtimestamp(os.path.getmtime(full_dir_path), tz=timezone.utc)
                 print(f'{dir_name} last modified: {subfolder_modified_time}, last released: {last_release_time}')
