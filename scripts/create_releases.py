@@ -1,7 +1,7 @@
 import os
 import zipfile
 from github import Github
-from datetime import datetime
+from datetime import datetime, timezone
 import re
 
 # Initialize GitHub API client with the token from environment variables
@@ -81,7 +81,7 @@ with zipfile.ZipFile(global_zip_name, 'w') as global_zip:
             # Check if the subfolder has been modified since the last release
             else:
                 last_release_time = existing_releases[dir_name]
-                subfolder_modified_time = datetime.fromtimestamp(os.path.getmtime(full_dir_path))
+                subfolder_modified_time = datetime.fromtimestamp(os.path.getmtime(full_dir_path), tz=timezone.utc)
                 if subfolder_modified_time > last_release_time:
                     # Mark to update the global release since we have a modified subfolder
                     update_global_release = True
