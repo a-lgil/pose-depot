@@ -1,0 +1,30 @@
+name: Release Subfolders
+
+# Trigger the workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3  # Check out the repository
+
+    - name: Set up Python
+      uses: actions/setup-python@v4  # Set up Python environment
+      with:
+        python-version: '3.x'  # Specify Python version
+
+    - name: Install dependencies
+      run: |
+        pip install PyGithub  # Install PyGithub library
+
+    - name: Check and create releases
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub token from secrets
+      run: |
+        python scripts/create_releases.py  # Run the Python script from the /scripts/ folder
