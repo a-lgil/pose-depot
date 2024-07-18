@@ -82,6 +82,7 @@ with zipfile.ZipFile(global_zip_name, 'w') as global_zip:
             else:
                 last_release_time = existing_releases[dir_name]
                 subfolder_modified_time = datetime.fromtimestamp(os.path.getmtime(full_dir_path), tz=timezone.utc)
+                print(f'{dir_name} last modified: {subfolder_modified_time}, last released: {last_release_time}')
                 if subfolder_modified_time > last_release_time:
                     # Mark to update the global release since we have a modified subfolder
                     update_global_release = True
