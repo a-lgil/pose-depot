@@ -33,7 +33,7 @@ The pose collections can be downloaded directly from [Releases](https://github.c
 
 > \[!IMPORTANT]
 >
-> **Star the repository** if you want to receive all release notifications from GitHub without any delay. It also helps motivating me to keep updating the project. \~ ⭐️
+> **Star the repository** if you want to receive all release notifications from GitHub without any delay. It also helps motivate me to keep updating the project. \~ ⭐️
 
 ## 🤝&nbsp;Missing a specific pose? Found a bug? Have a question?
 
