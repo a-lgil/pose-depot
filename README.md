@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-    <a href="https://a-lgil.github.io/pose-depot/" target="_blank">
+    <a href="https://a-lgil.github.io/pose-depot/gallery/" target="_blank">
         <img width="100%" src="assets/logo/ezgif-3-a558e401d3.gif" alt="Pose Depot logo" style="border-radius: 0.6rem">
     </a>
 </p>
@@ -23,11 +23,11 @@ The aim is to provide a comprehensive dataset designed for use with ControlNets 
 
 
 
-The pose collections can be downloaded directly from [Releases](https://github.com/a-lgil/pose-depot/releases), but with ease of exploration in mind, I've created a [webpage](https://a-lgil.github.io/pose-depot/) that allows users to conveniently browse, filter by tags, and view the different collections and their content. You can access it by clicking on the image below:
+The pose collections can be downloaded directly from [Releases](https://github.com/a-lgil/pose-depot/releases), but with ease of exploration in mind, I've created a [webpage](https://a-lgil.github.io/pose-depot/gallery/) that allows users to conveniently browse, filter by tags, and view the different collections and their content. Bear in mind that the webpage is still a WIP. You can access it by clicking on the image below:
 
 <br/>
 <p align="center">
-    <a target="_blank" href="https://a-lgil.github.io/pose-depot/"><img width="100%" src="assets/images/gallery.png" alt="Gallery" style="border-radius: 0.6rem;">
+    <a target="_blank" href="https://a-lgil.github.io/pose-depot/gallery/"><img width="100%" src="assets/images/gallery.png" alt="Gallery" style="border-radius: 0.6rem;">
 </p>
 <br/>
 
