@@ -1,0 +1,81 @@
+---
+title: "Collection #15M: Flying Superhero"
+pubDate: "2024/07/25"
+author: "a-lgil"
+tags:
+  - Male
+  - Canny
+  - Depth
+  - Normal
+  - OpenPose
+  - Jumping
+imgUrl: '../../../../collections/15M_Flying_Superhero/Cover.png'
+galleryUrls:
+  - ../../../../collections/15M_Flying_Superhero/Canny.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand.png
+  - ../../../../collections/15M_Flying_Superhero/Depth.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand_1.png
+  - ../../../../collections/15M_Flying_Superhero/Canny_1.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand_1.png
+  - ../../../../collections/15M_Flying_Superhero/Depth_1.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand_1.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull_1.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand_1.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose_1.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand_2.png
+  - ../../../../collections/15M_Flying_Superhero/Canny_2.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand_2.png
+  - ../../../../collections/15M_Flying_Superhero/Depth_2.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand_2.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull_2.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand_2.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose_2.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand_3.png
+  - ../../../../collections/15M_Flying_Superhero/Canny_3.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand_3.png
+  - ../../../../collections/15M_Flying_Superhero/Depth_3.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand_3.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull_3.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand_3.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose_3.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand_4.png
+  - ../../../../collections/15M_Flying_Superhero/Canny_4.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand_4.png
+  - ../../../../collections/15M_Flying_Superhero/Depth_4.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand_4.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull_4.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand_4.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose_4.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand_5.png
+  - ../../../../collections/15M_Flying_Superhero/Canny_5.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand_5.png
+  - ../../../../collections/15M_Flying_Superhero/Depth_5.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand_5.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull_5.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand_5.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose_5.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand_6.png
+  - ../../../../collections/15M_Flying_Superhero/Canny_6.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand_6.png
+  - ../../../../collections/15M_Flying_Superhero/Depth_6.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand_6.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull_6.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand_6.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose_6.png
+  - ../../../../collections/15M_Flying_Superhero/CannyHand_7.png
+  - ../../../../collections/15M_Flying_Superhero/Canny_7.png
+  - ../../../../collections/15M_Flying_Superhero/DepthHand_7.png
+  - ../../../../collections/15M_Flying_Superhero/Depth_7.png
+  - ../../../../collections/15M_Flying_Superhero/NormalHand_7.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseFull_7.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPoseHand_7.png
+  - ../../../../collections/15M_Flying_Superhero/OpenPose_7.png
+  - ../../../../collections/15M_Flying_Superhero/Example.png
+description: ''
+layout: '../../layouts/BlogPost.astro'
+---
