@@ -1,0 +1,89 @@
+---
+title: "Collection #16F: Sitting and Thinking"
+pubDate: "2024/08/06"
+author: "a-lgil"
+tags:
+  - Female
+  - Canny
+  - Depth
+  - Normal
+  - OpenPose
+  - Sitting
+imgUrl: '../../../../collections/16F_Sitting_and_Thinking/Cover.png'
+galleryUrls:
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_1.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_2.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_3.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_4.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_5.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_6.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_7.png
+  - ../../../../collections/16F_Sitting_and_Thinking/CannyHand_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Canny_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/DepthHand_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Depth_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/NormalHand_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseFull_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPoseHand_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/OpenPose_8.png
+  - ../../../../collections/16F_Sitting_and_Thinking/Example.png
+description: ''
+layout: '../../layouts/BlogPost.astro'
+---
