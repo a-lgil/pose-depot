@@ -20,8 +20,8 @@ A collection of ControlNet poses.
 <p align="center">
     <a href="https://civitai.com/user/Pose_Depot" title="Civitai Bronze New Creators Badge - Awarded for being in the top 100 of the new creators leaderboard"><img src="assets/images/civitai_bronze_new_creators_badge.png" width="50" alt="Bronze New Creators Badge" role="img"/></a>
     <a href="https://civitai.com/user/Pose_Depot" title="Civitai Bronze Poses Badge - Awarded for being in the top 100 of the Poses leaderboard"><img src="assets/images/civitai_bronze_poses_badge.png" width="50" alt="Bronze Poses Badge" role="img"/></a>
-    <a href="https://civitai.com/user/Pose_Depot" title="Civitai Silver Poses Badge - Awarded for being in the top 10 of the Poses leaderboard"><img src="assets/images/civitai_gold_poses_badge.png" width="50" alt="Gold Poses Badge" role="img"/></a>
-    <a href="https://civitai.com/user/Pose_Depot" title="Civitai Gold Poses Badge - Awarded for being in the top 3 of the Poses leaderboard"><img src="assets/images/civitai_silver_poses_badge.png" width="50" alt="Silver Poses Badge" role="img"/></a>
+    <a href="https://civitai.com/user/Pose_Depot" title="Civitai Silver Poses Badge - Awarded for being in the top 10 of the Poses leaderboard"><img src="assets/images/civitai_silver_poses_badge.png" width="50" alt="Gold Poses Badge" role="img"/></a>
+    <a href="https://civitai.com/user/Pose_Depot" title="Civitai Gold Poses Badge - Awarded for being in the top 3 of the Poses leaderboard"><img src="assets/images/civitai_gold_poses_badge.png" width="50" alt="Silver Poses Badge" role="img"/></a>
 </p>
 
 ##
