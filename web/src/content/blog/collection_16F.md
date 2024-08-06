@@ -1,6 +1,6 @@
 ---
 title: "Collection #16F: Sitting and Thinking"
-pubDate: "2024/08/06"
+pubDate: "2024/08/05"
 author: "a-lgil"
 tags:
   - Female
